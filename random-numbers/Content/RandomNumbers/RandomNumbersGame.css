@@ -1,0 +1,176 @@
+﻿.random-numbers-header {
+    /*margin-left: 350px;*/
+    text-align: center
+}
+
+.choose-number {
+    /*  border: solid;*/
+   /* position: absolute;
+    top: 250px;
+    left: 430px;*/
+    font-size: 30px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;*/
+    margin-left: 0px;
+    margin-top: 30px;
+}
+
+
+.button-and-random-number-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+    margin-top: 5px;
+    align-self: center;
+    /* align-items: flex-start;*/
+}
+
+.button-one-two-five {
+    font-size: 60px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin:10px 7px 4px 4px;
+}
+
+.button-six-to-ten {
+    font-size: 60px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin: 1px 7px 4px 4px;
+}
+
+.button-one-two-five button {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:groove;
+}
+
+.button-six-to-ten button {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: groove;
+}
+
+.button-one-two-five button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+.button-six-to-ten button:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+.button.clicked {
+    background-color: #FFC107; /* Yellow color when clicked */
+    color: black;
+}
+
+.button-one {
+    background-color: #1E90FF;
+}
+
+.button-two {
+    background-color: #00BFFF;
+}
+
+.button-three {
+    background-color: #4682B4;
+}
+
+.button-four {
+    background-color: #4169E1;
+}
+
+.button-five {
+    background-color: #0000FF;
+}
+
+.button-six {
+    background-color: #1E90FF;
+}
+
+.button-seven {
+    background-color: #00BFFF;
+}
+
+.button-eight {
+    background-color: #4682B4;
+}
+
+.button-nine {
+    background-color: #4169E1;
+}
+
+.button-ten {
+    background-color: #0000FF;
+}
+
+.reset-button {
+    width: 100px;
+    height: 40px;
+    margin-left: 387px;
+}
+
+.roll-button {
+    width: 100px;
+    height: 40px;
+    margin-left: 250px;
+}
+
+.random-number-container {
+    font-size: 100px;
+    font-weight: bold;
+    color: #ff5722; /* Orange color */
+    background-color: #fff;
+    /*display: inline-block;*/
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    transition: transform 0.3s ease;
+    margin-left: 80px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.random-numbers {
+    height: 150px;
+    width: 150px;
+    border: none;
+    font-size: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.result-container label {
+    font-size: 95px;
+}
+
+.result-container {
+    border: dotted;
+    height: 100px;
+    width: 680px;
+    margin-left: 250px;
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

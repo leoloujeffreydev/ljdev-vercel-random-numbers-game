@@ -1,0 +1,65 @@
+﻿<head>
+    @{
+        ViewBag.Title = "RandomNumbersGameView";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    @section Styles {
+        <link href="~/Content/RandomNumbers/RandomNumbersGame.css" rel="stylesheet" />
+    }
+
+    @section Scripts {
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="~/Scripts/RandomNumbers/RandomNumbersGame.js"></script>
+    }
+
+    <title>Random Numbers Game</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="random-numbers-header">RANDOM NUMBERS GAME</h1>
+    </header>
+
+    <main>
+       
+
+        <div class="button-and-random-number-container">
+            <div class="button-container">
+                <div class="choose-number">
+                    <p>CHOOSE YOUR NUMBER</p>
+                </div>
+                <div class="button-one-two-five">
+                    <button id="btnone" type="button" class="button-one">1</button>
+                    <button id="btntwo" type="button" class="button-two">2</button>
+                    <button id="btnthree" type="button" class="button-three">3</button>
+                    <button id="btnfour" type="button" class="button-four">4</button>
+                    <button id="btnfive" type="button" class="button-five">5</button>
+                </div>
+                <div class="button-six-to-ten">
+                    <button id="btnsix" type="button" class="button-six">6</button>
+                    <button id="btnseven" type="button" class="button-seven">7</button>
+                    <button id="btneight" type="button" class="button-eight">8</button>
+                    <button id="btnnine" type="button" class="button-nine">9</button>
+                    <button id="btnten" type="button" class="button-ten">10</button>
+                </div>
+            </div>
+            <div class="random-number-container">
+                <input type="text" id="VBrandomNumbersMaster" class="random-numbers" readonly="readonly" />
+            </div>
+        </div>
+
+        <button id="btnReset" type="button" class="reset-button">RESET</button>
+        <button id="btnRoll" type="button" class="roll-button">ROLL</button>
+
+        <div class="result-container">
+            <label id="lblResult" class="result-label"></label>
+        </div>
+    </main>
+
+    <input type="hidden" id="txtRandomGuess" class="random-numbers" placeholder="" />
+    <nav>
+        <a href="@Url.Action("RandomNumbersView", "RandomNumbers")">Go Back</a>
+    </nav>
+
+</body>

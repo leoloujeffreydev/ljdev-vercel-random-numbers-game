@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    @{
+        ViewBag.Title = "RandomNumbersView";
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+
+    @section Styles {
+        <link href="~/Content/RandomNumbers/RandomNumbers.css" rel="stylesheet" />
+    }
+
+    @section Scripts {
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="~/Scripts/RandomNumbers/RandomNumbers.js"></script>
+    }
+</head>
+
+<body>
+    <h2 class="random-numbers-header">The random number between 1 and 10 is:</h2>
+    <div id="randomNumbers" class="random-numbers"><strong>@ViewBag.RandomNumber</strong></div>
+    <div>@Html.ActionLink("Random", "RandomNumbersView")</div>
+    <a href="@Url.Action("RandomNumbersGameView", "RandomNumbersGame")">Go to Random Numbers Game</a>
+</body>
+</html>

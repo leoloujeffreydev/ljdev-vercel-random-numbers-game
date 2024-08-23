@@ -1,0 +1,30 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.random-numbers-header {
+    color: #333;
+    margin-top: 50px;
+    font-size: 24px;
+}
+
+.random-numbers {
+    font-size: 100px;
+    font-weight: bold;
+    color: #ff5722; /* Orange color */
+    background-color: #fff;
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+
+    .countdown-timer:hover {
+        transform: scale(1.1);
+    }
